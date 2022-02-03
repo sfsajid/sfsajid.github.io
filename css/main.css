@@ -1,0 +1,54 @@
+/* Welcome section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.projects-section-header{
+  color: white;
+  border-bottom: 0.2rem solid white;
+}
+
+
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: red;
+}
+
+/* Text decoration */
+
+.m-links:hover {
+  text-decoration: underline;
+  
+}
+
+.img-h{
+  height: 300px;
+}
+
+.icn {
+  background-color: transparent;
+  border: none;
+  color: dodgerblue;
+  /* padding: 0 5px 0 5px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  /* margin: 0 2px; */
+  /* border-radius: 50%; */
+}
+
+.icn:hover{
+  color: blue;
+}
+

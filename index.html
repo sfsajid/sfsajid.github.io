@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document Title</title>
+    <title>Mimic Portfolio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,56 +22,117 @@
 
     <!-- navbar starts here -->
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="justify-content-start">
-                <a class="navbar-brand" href="#">Portfolio</a>
-            </div>
-            <div class="justify-content-end">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-          
-            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-                
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-                </ul>
-                <button class="icn" type="button" data-bs-toggle="collapse" data-bs-target="#searchToggler" aria-controls="searchToggler" aria-expanded="false" aria-label="Search">
-                    
-                    <i class="fas fa-search"></i>
-                </button>
-                
-            </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mimic Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon justify-content-end"></span>
+        </button>
+        <div class="collapse justify-content-end navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link m-links active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-links" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-links" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <div class="collapse justify-content-end sticky bg-dark p-3 row" id="searchToggler">
-        <form class="d-flex col-3">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-    </div>
     <!-- navbar ends here -->
 
-    <!-- Start Wekcome Section -->
+    <!-- Start Welcome Section -->
 
-    <section id="welcome-section" class="welcome-section">
-       <img class="img-fluid rounded-circle img-h mb-2" src="/img/profile_photo.png" alt="Mimic Photo">
+    <section id="about" class="welcome-section">
+       <img class="img-fluid rounded-circle img-h my-2" src="/img/profile_photo.png" alt="Mimic Photo">
        <h1 class="text-white">Hey I am Mimic</h1>
        <p>a web developer</p>
     </section>
       
     <!-- END WELCOME SECTION -->
+
+    <!-- Start Project Section -->
+
+    <section id="projects" class="container">
+      <div class="title text-center mb-3">
+        <h2 class="text-white font-weight-bolder">Here are some projects of mine</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="card shadow" style="width: 18rem;">
+            <div class="inner">
+              <img src="/img/calc.png" class="card-img-top" alt="card images">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-success">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow" style="width: 18rem;">
+            <div class="inner">
+              <img src="/img/tic-tac-toe.png" class="card-img-top" alt="card images">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Tic Tac Toe</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-success">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100 shadow" style="width: 18rem;">
+            <div class="inner">
+              <img src="/img/tribute.jpg" class="card-img-top" alt="card images">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Tribute</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-success">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- End Project Section -->
+
+
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2 class="contact-header text-white">Let's work together...</h2>
+          <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://facebook.com/" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a id="profile-link" href="https://github.com/sfsajid91" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://twitter.com/sfsajid91" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+          <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section class="contact p-3">
+        <h3>Let's work together...</h3>
+        <h4>How do you take your coffee?</h4>
+    </section>
+      
+      <!-- END CONTACT SECTION -->
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

@@ -1,139 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mimic Portfolio</title>
+    <title>Mimics Portfolio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <!-- fontawesome css -->
-    <script
-      src="https://kit.fontawesome.com/6539b08399.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/6539b08399.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS v5.1.3 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/style.css">    
   </head>
 
   <body>
 
-    <!-- navbar starts here -->
-
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mimic Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon justify-content-end"></span>
-        </button>
-        <div class="collapse justify-content-end navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav ml-lg-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link m-links active" aria-current="page" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-links" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link m-links" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <!-- Navbar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong>Mimic.Com</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link link-style-2" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-style-2" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-style-2" href="#contact">Contact</a>
+                </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
+    <!-- Navbar ends here -->
 
-    <!-- navbar ends here -->
+    <!-- About section starts here -->
+    <section class="container-fluid pb-5 justify-content-center about-section">
+        <img class="img-fluid rounded-circle my-2" src="/img/profile_photo.png" alt="Mimic Photo">
+        <h1 class="display-3">Hey I am Mimic</h1>
+        <p class="text-danger">a web developer</p>
+        <hr class="hr-1">
+        <p class="subtile">Journey of a focused mind trough a distracted world.</p>
+        <a target='_blank' class="btn btn-social btn-primary mb-2 btn-linkedin btn-lg" href="https://www.linkedin.com/in/msimevski/" role="button">
+            <span class="fa fa-linkedin"></span> LinkedIn
+        </a>
+        <a target='_blank' class="btn btn-social btn-success mx-2 mb-2 btn-lg" href="https://www.freecodecamp.org/smihajlo" role="button"><span class="fa fa-free-code-camp"></span> freeCodeCamp</a>
+        <a target='_blank' class="btn btn-social btn-secondary mb-2 btn-github btn-lg" href="https://github.com/smihajlo" role="button"><span class="fa fa-github"></span> GitHub</a>
 
-    <!-- Start Welcome Section -->
-
-    <section id="about" class="welcome-section">
-       <img class="img-fluid rounded-circle img-h my-2" src="/img/profile_photo.png" alt="Mimic Photo">
-       <h1 class="text-white">Hey I am Mimic</h1>
-       <p>a web developer</p>
+        
     </section>
-      
-    <!-- END WELCOME SECTION -->
 
-    <!-- Start Project Section -->
+    <!-- About section ends here -->
 
-    <section id="projects" class="container">
-      <div class="title text-center mb-3">
-        <h2 class="text-white font-weight-bolder">Here are some projects of mine</h2>
+    <!-- Skills section starts here -->
+    <section id="skills" class="container-fluid text-center">
+      <div class="title">
+        <h3 class="text-center display-6">My Skills</h3>
+        <hr class="hr-2">
+        <hr class="hr-3">
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <div class="card shadow" style="width: 18rem;">
-            <div class="inner">
-              <img src="/img/calc.png" class="card-img-top" alt="card images">
+      <div class="text-secondary">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,<br>
+        ut fermentum massa justo sit amet risus. Nullam id dolor
+      </div>
+      <div class="row row-cols-md-2 row-cols-1">
+        <div class="col">
+          <div class="progress bg-secondary mt-3">           
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+              <img class="progress-img" src="/img/icons/html.png" alt="html">
+              
             </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Calculator</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-success">Go somewhere</a>
-            </div>
+          </div>
+          
+          <div class="progress bg-secondary mt-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%"><img class="progress-img" src="/img/icons/css.png" alt="css"></div>
+          </div>
+          <div class="progress bg-secondary mt-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%"><img class="progress-img" src="/img/icons/bootstrap.png" alt="bootstrap"></div>
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card shadow" style="width: 18rem;">
-            <div class="inner">
-              <img src="/img/tic-tac-toe.png" class="card-img-top" alt="card images">
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Tic Tac Toe</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-success">Go somewhere</a>
-            </div>
+        <div class="col">
+          <div class="progress bg-secondary mt-3">           
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><img class="progress-img" src="/img/icons/php.png" alt="php"></div>
+          </div>
+          
+          <div class="progress bg-secondary mt-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%"><img class="progress-img" src="/img/icons/wp.png" alt="wordpress"></div>
+          </div>
+          <div class="progress bg-secondary mt-3">
+            <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%"><img class="progress-img" src="/img/icons/js.png" alt="js"></div>
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="card h-100 shadow" style="width: 18rem;">
-            <div class="inner">
-              <img src="/img/tribute.jpg" class="card-img-top" alt="card images">
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Tribute</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-success">Go somewhere</a>
-            </div>
-          </div>
-        </div>
       </div>
       
     </section>
+    <!-- Skills section ends here -->
 
-    <!-- End Project Section -->
+    <!-- Projects section starts here -->
 
-
-
-    <!-- START CONTACT SECTION -->
-
-    <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-          <h2 class="contact-header text-white">Let's work together...</h2>
-          <p>How do you take your coffee?</p>
-        </div>
-        <div class="contact-links">
-          <a href="https://facebook.com/" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
-          <a id="profile-link" href="https://github.com/sfsajid91" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://twitter.com/sfsajid91" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
-          <a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-          <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-        </div>
-    </section>
+    <section id="project" class="container-fluid project-section justify-content-center">
+        <h3 class="display-6">Projects I have done</h3>
+        <hr class="hr-1">
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-2 d-block d-md-flex">
+              <div class="card shadow">
+                <div class="inner">
+                  <img src="/img/tic-tac-toe.png" class="card-img-top" alt="card images">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tic Tac Toe Game</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-success">View Project</a>
+                </div>
+              </div>
+            </div>
     
-    <hr>
-
-    <section class="contact p-3">
-        <h3>Let's work together...</h3>
-        <h4>How do you take your coffee?</h4>
+            <div class="col-md-3 mb-2 d-block d-md-flex">
+              <div class="card shadow">
+                <div class="inner">
+                  <img src="/img/tic-tac-toe.png" class="card-img-top" alt="card images">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tic Tac Toe Game</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-success">View Project</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-3 mb-2 d-block d-md-flex">
+              <div class="card shadow">
+                <div class="inner">
+                  <img src="/img/tic-tac-toe.png" class="card-img-top" alt="card images">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tic Tac Toe Game</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-success">View Project</a>
+                </div>
+              </div>
+            </div>    
+        </div>
+                    
     </section>
+    <!-- Project section ends here -->
+    
+    <!-- Feedback section starts here -->
+    <section id="feedback" class="container-fluid">
+      <div class="feedback-title">
+        <h3 class="text-center display-6">Feedback</h3>
+        <hr class="hr-style">
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel" data-pause="hover">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>Mimic is amazing! seriously speaking, he made my dreams come true. very talented and quick, gave us his undivided attention and responds to every request. unique, amazing website, Will never think twice and book him again soon!</p>
+            <img class="feedback-img rounded-circle mb-3" src="img/anisul.jpeg" alt="">
+            <h6>Anisul Islam</h6>
+          </div>
+          <div class="carousel-item">
+            <p>Mimic is amazing! seriously speaking, he made my dreams come true. very talented and quick, gave us his undivided attention and responds to every request. unique, amazing website, Will never think twice and book him again soon!</p>
+            <img class="feedback-img rounded-circle mb-3" src="img/mark.jpeg" alt="">
+            <h6>Mark Zuckerberg</h6>
+          </div>
+          <div class="carousel-item">
+            <p>Great communication with the client. He had no issues with revisions. Easy to work with and a great experience. I would highly recommend it. Thank you!</p>
+            
+            <img class="feedback-img mb-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxDrCR5SfO2zzeBNLF9U9xbjlC8-ToAA68g&usqp=CAU" alt="">
+            <h6>Jhon Brown</h6>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Feedback section ends here -->
       
-      <!-- END CONTACT SECTION -->
-      
+    
+    <button
+        type="button"
+       
+        id="back-to-top"
+        class="to-top"
+        >
+        <svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 1312q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23zm0-384q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"></path></svg>
+    </button>
+
+
+    <script src="/scripts/main.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

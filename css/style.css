@@ -1,18 +1,88 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@300&family=Staatliches&display=swap');
 
 /* General */
+
+.to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 70px;
+  background-color: #FBD214;
+  font-size: 24px;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 1px;
+  width: 40px;
+  border-radius: 50px;
+  opacity: 0;
+  border: none;
+  transition: all 0.8s ease;
+}
+
+.show{
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
+#back-to-top svg{
+  fill: white;
+  transition: all 300ms ease;
+}
+
+#back-to-top:hover svg{
+  transform: translate(0px, -15px);
+}
 
 .hr-1{
   border-top: 2px solid gray;
   margin: 1rem auto;
+  opacity: 80%;
   width: 50%;
 }
 
+.hr-2{
+  border: 1px solid #FBD214;
+  opacity: 80%;
+  margin: 0 auto;
+  width: 10%;
+}
+
+.hr-3{
+  border: 1px solid #FBD214;
+  opacity: 80%;
+  margin: 0 auto;
+  margin-top: 4px;
+  margin-bottom: 1.5rem;
+  width: 7%;
+}
 
 /* NavBar Section */
 
+.link-style-2{
+  display: inline-block;
+  position: relative;
+  color: #FBD214;
+}
 
+.link-style-2::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #FBD214;
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+}
+
+.link-style-2:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left, bottom right;
+}
 
 
 
@@ -74,14 +144,15 @@
   padding: 2% 10%;
 }
 
-/* .feedback-title{
+.feedback-title{
   font-size: 2.5rem;
-  font-family: 'Fjalla One', sans-serif;
-} */
+  font-family: 'Oswald', sans-serif;
+}
 
 .hr-style{
-  border-top: 5px dotted red;
+  border-top: 5px dotted rgb(209, 19, 19);
   color: transparent;
+  opacity: 70%;
   margin: 0 auto;
   width: 100px;
 }
@@ -103,3 +174,30 @@
   bottom: -20px;
 }
 
+/* Skills Section */
+
+#skills{
+  background: #E9ECEF;
+  text-align: center;
+  padding: 3% 10%;
+}
+
+.title{
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.progress{
+  height: 30px;
+}
+
+.progress-bar{
+  background: #FBD214;
+  padding: 1px 5px;
+}
+
+.progress-img{
+  width: 25px;
+  height: auto;
+  object-fit: cover;
+}
